@@ -79,9 +79,9 @@ async function calculate() {
       "CC=F": 10,
       AAPL: 1,
       TSLA: 1,
-      "BTC-USD": 1,
-      "DE40.DE": 1,
-      "^NDX": 1,
+      "BTC-USD": 2,
+      "DE40.DE": 20,
+      "^NDX": 20,
       "NG=F": 10000,
       "GC=F": 100,
       "SI=F": 5000,
@@ -114,9 +114,7 @@ async function calculate() {
       <p><strong>Ilość kontraktów:</strong> ${volume}</p>
       <p><strong>Nominał pozycji:</strong> ${nominalPLN.toFixed(2)} PLN</p>
       <p><strong>Kapitał wymagany (z dźwignią):</strong> ${investedCapitalPLN.toFixed(2)} PLN</p>
-      <p><strong>Zysk brutto:</strong> ${grossProfitPLN.toFixed(2)} PLN</p>
-      <p><strong>Prowizje łącznie:</strong> ${totalFeePLN.toFixed(2)} PLN</p>
-      <p><strong>Zysk netto:</strong> ${netProfitPLN.toFixed(2)} PLN</p>
+      <p><strong>Zysk:</strong> ${grossProfitPLN.toFixed(2)} PLN</p>
     `;
   } catch (error) {
     output.innerHTML = `<p style="color:red;"><strong>Błąd:</strong> Nie udało się pobrać danych. Sprawdź połączenie lub spróbuj ponownie później.</p>`;
