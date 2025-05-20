@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kalkulator CFD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Kalkulator CFD</h1>
+
+    <label for="symbol">Wybierz aktywo:</label>
+    <select id="symbol">
+      <option value="CC=F">Kakao (CACAO)</option>
+      <option value="AAPL">Apple (AAPL)</option>
+      <option value="TSLA">Tesla (TSLA)</option>
+      <option value="BTC-USD">Bitcoin (BTC)</option>
+      <option value="DE40.DE">DAX (DE40)</option>
+      <option value="^NDX">US100 (NASDAQ)</option>
+      <option value="NG=F">Gaz ziemny (NATGAS)</option>
+      <option value="GC=F">Złoto (GOLD)</option>
+      <option value="SI=F">Srebro (SILVER)</option>
+      <option value="CL=F">Ropa WTI (WTI)</option>
+      <option value="KC=F">Kawa (COFFEE)</option>
+    </select>
+
+    <label for="volume">Ilość wolumenów (kontraktów):</label>
+    <input type="number" id="volume" value="0.01" placeholder="np. 10" />
+
+    <label for="entryPrice">Cena zakupu:</label>
+    <input type="number" id="entryPrice" placeholder="np. 150.00" />
+
+    <label for="exitPrice">Cena wyjścia (zostaw puste, jeśli cena ma być aktualna):</label>
+    <input type="number" id="exitPrice" placeholder="np. 160.00" />
+
+    <label for="positionType">Typ pozycji:</label>
+    <select id="positionType">
+      <option value="long">Kupno (Long)</option>
+      <option value="short">Sprzedaż (Short)</option>
+    </select>
+
+    <label for="leverage">Dźwignia (1:?):</label>
+    <input type="number" id="leverage" value="10" />
+
+    <label for="fee">Prowizja maklera (%):</label>
+    <input type="number" id="fee" value="0" />
+
+    <button id="calculateBtn">Oblicz zysk/stratę</button>
+
+    <div class="result" id="output"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
