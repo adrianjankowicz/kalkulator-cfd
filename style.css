@@ -1,49 +1,70 @@
-      body {
-        font-family: Arial, sans-serif;
-        max-width: 600px;
-        margin: 30px auto;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      h1 {
-        text-align: center;
-      }
-      label {
-        display: block;
-        margin-top: 10px;
-      }
-      input,
-      select {
-        width: 100%;
-        padding: 8px;
-        margin-top: 4px;
-      }
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 20px;
+  background: #121212;
+  color: #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
 
-      input{
-        width: 97%;
-      }
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 15px;
+}
 
-      button {
-        margin-top: 15px;
-        padding: 10px;
-        width: 100%;
-        background: #007bff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      button:hover {
-        background: #0056b3;
-      }
-      .result {
-        margin-top: 20px;
-        background: #fff;
-        padding: 10px;
-        border-radius: 4px;
-      }
-      .result p {
-        margin: 5px 0;
-      }
+label {
+  display: block;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  background: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+input {
+  width: 97%;
+}
+
+input::placeholder {
+  color: #888888;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #1976d2;
+}
+
+.result {
+  margin-top: 20px;
+  background: #1e1e1e;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+.result p {
+  margin: 5px 0;
+  color: #dddddd;
+}
