@@ -68,3 +68,40 @@ button:hover {
   margin: 5px 0;
   color: #dddddd;
 }
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 15px;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input,
+  select,
+  button {
+    font-size: 16px;
+  }
+
+  input {
+    width: 96%;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+  }
+
+  .result {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
