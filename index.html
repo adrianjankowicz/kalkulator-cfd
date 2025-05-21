@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <title>Kalkulator CFD</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <div class="container">
@@ -24,6 +23,8 @@
         <option value="SI=F">Srebro (SILVER)</option>
         <option value="CL=F">Ropa WTI (WTI)</option>
         <option value="KC=F">Kawa (COFFEE)</option>
+        <option value="USDPLN=X">USD/PLN</option>
+        <option value="EURPLN=X">EUR/PLN</option>
       </select>
 
       <label for="volume">Ilość wolumenów (kontraktów):</label>
@@ -52,8 +53,8 @@
       <label for="leverage">Dźwignia (1:?):</label>
       <input type="number" id="leverage" value="10" />
 
-      <label for="fee">Prowizja maklera (%):</label>
-      <input type="number" id="fee" value="0" />
+      <!-- <label for="fee">Prowizja maklera (%):</label>
+      <input type="number" id="fee" value="0" /> -->
 
       <button id="calculateBtn">Oblicz zysk/stratę</button>
 

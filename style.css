@@ -69,6 +69,16 @@ button:hover {
   color: #dddddd;
 }
 
+#green{
+  font-size: 1.3rem;
+  color:green;
+}
+
+#red{
+  color:red;
+  font-size: 1.3rem;
+}
+
 @media (max-width: 600px) {
   body {
     margin: 0;
