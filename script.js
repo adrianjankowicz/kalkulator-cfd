@@ -34,6 +34,7 @@ const defaultLeverage = {
   "EURPLN=X": 20,
 };
 
+
 document.getElementById("symbol").addEventListener("change", function () {
   const selectedSymbol = this.value;
   const leverageInput = document.getElementById("leverage");
@@ -45,7 +46,6 @@ document.getElementById("symbol").addEventListener("change", function () {
     <div class="position-entry">
       <input type="number" step="0.01" value="0.01" placeholder="Wolumen" class="volume-entry" />
     <input type="number" step="0.0001" placeholder="Cena wejścia" class="price-entry" />
-      <button id="addPosition" type="button">+</button>
     </div>
   `;
     document.getElementById("addPosition").addEventListener("click", addPosition);
