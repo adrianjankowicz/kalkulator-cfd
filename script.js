@@ -48,6 +48,8 @@ document.getElementById("symbol").addEventListener("change", function () {
       <button id="addPosition" type="button">+</button>
     </div>
   `;
+    document.getElementById("addPosition").addEventListener("click", addPosition);
+
 });
 
 document.getElementById("addPosition").addEventListener("click", () => {
